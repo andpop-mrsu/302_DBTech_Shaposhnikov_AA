@@ -1,0 +1,5 @@
+﻿*.db
+*.sql
+sqlite3.exe
+.idea/
+dataset/
