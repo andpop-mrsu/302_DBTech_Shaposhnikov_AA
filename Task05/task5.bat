@@ -220,8 +220,7 @@ SELECT
 FROM users u
 LEFT JOIN user_ratings ur ON u.id = ur.user_id
 LEFT JOIN user_tags ut ON u.id = ut.user_id
-ORDER BY rating_count DESC, tag_count DESC
-LIMIT 20;"
+ORDER BY rating_count DESC, tag_count DESC;"
 
 echo ""
 echo "7. Для каждого пользователя вывести имя и последний фильм, который он оценил:"
@@ -243,5 +242,4 @@ SELECT
 FROM users u
 LEFT JOIN last_rating lr ON u.id = lr.user_id
 LEFT JOIN movies m ON lr.movie_id = m.id
-ORDER BY u.id
-LIMIT 20;"
+ORDER BY u.id;"
