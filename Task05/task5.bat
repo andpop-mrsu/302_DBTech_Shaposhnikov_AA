@@ -1,11 +1,6 @@
 #!/bin/bash
+chcp 65001
 
-# Установка кодировки UTF-8
-export LANG=C.UTF-8
-export LC_ALL=C.UTF-8
-
-# Создание и заполнение базы данных
-echo "Создание базы данных..."
 sqlite3 movies_rating.db < db_init.sql
 
 echo ""
